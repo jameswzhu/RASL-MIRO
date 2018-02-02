@@ -1,0 +1,72 @@
+Programming tasks for MIRO:
+
+
+	Navigation:
+
+		- Drive around room without running into anything or going over any ledges
+
+		- Localize self in a room given a floormap of the room (particle filter)
+
+		- Drive along specific path from point to point
+
+		- Plan shortest path from point to point and navigate path
+
+		- Build map of room and localize self relative to map (rather than being given the map)  (SLAM)
+
+
+	Object / Command Recognition:
+
+		Video: 
+
+			- Detect ball in camera stream
+
+			- Detect person in camera stream
+
+			- Track moving objects in video / predict their motion (Kalman Filter)
+
+			- Detect pointing / other visual commands
+
+		Audio:
+
+			- Recognize simple voice commands
+
+			- Determine approximate source of a sound (such as a voice command)
+
+
+		Other Sensors:
+
+			- Detect petting
+
+
+
+	Combined recognition / navigation:
+
+		- Drive to person in response to voice command
+
+		- Move neck to look towards person's face
+
+		- Look where person is pointing in response to voice command
+
+		- Play simple games:
+
+			o Chase a ball around
+
+			o Chase a person around
+
+			o Retrieve object after person throws it
+
+
+	Moods:
+
+		- Make various moods for robot - behavior, eyelids, tail all change for different moods
+
+		- Make conditions under which robot uses each mood, what things can change mood
+
+
+	Learning:
+
+		- Learn to read various facial expressions
+
+		- Learn what games / behaviors a person likes - would adjust based on voice feedback from person  (RL)
+
+
