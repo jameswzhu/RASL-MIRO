@@ -7,7 +7,7 @@ import cv2
 
 # Saves camera streams to separate folders
 
-class image_stream:
+class camera_subscriber:
 
 	def __init__(self):
 		self.left_stream = rospy.Subscriber("/miro/rob01/platform/caml", Image, self.left_cam_callback, queue_size=1)
@@ -34,6 +34,6 @@ class image_stream:
 # Now, this is actually useful because we could import this class into another module
 # and this portion wouldn't run but the class could be used
 if __name__ == "__main__":
-	stream = image_stream()
+	stream = camera_subscriber()
 	rospy.init_node("Camera_Listener", anonymous=True)
 	rospy.spin()
